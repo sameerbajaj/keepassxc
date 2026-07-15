@@ -3,7 +3,7 @@
 # MINIZIP_LIBRARIES               - List of Minizip libraries
 
 find_library(MINIZIP_LIBRARIES NAMES minizip libminizip)
-find_path(MINIZIP_INCLUDE_DIR zip.h PATH_SUFFIXES minizip)
+find_path(MINIZIP_INCLUDE_DIR unzip.h PATH_SUFFIXES minizip)
 
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(Minizip DEFAULT_MSG MINIZIP_LIBRARIES MINIZIP_INCLUDE_DIR)
